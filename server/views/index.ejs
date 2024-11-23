@@ -1,6 +1,10 @@
 <% include Partials/header.ejs%>
 <% include Partials/main_nav.ejs%>
     <!-- Main Content -->
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="indexall">
+        <p id="indextext">Welcome to</p>
+        <h1 id="indextitle">WatchHistory</h1>
+        <br>
+        <button class="btn btn-primary" onclick="window.history.back()">Get Started <i class="fas fa-plus-circle"></i></button>
+    </div>
 <% include Partials/footer.ejs%>

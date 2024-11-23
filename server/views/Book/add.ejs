@@ -5,7 +5,7 @@
  <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
-            <h1><%= title %></h1>
+            <h1 class="titletext"><%= title %></h1>
             <form class="form" method="POST">
                 <div class="form-group">
                     <label for="titleTextField">Movie Title</label>
@@ -27,8 +27,9 @@
                     <textarea type="text" class="form-control" id="reviewTextArea"
                     placeholder="Enter Your Review" name="Review"></textarea>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit <i class="fas fa-edit"></i></button>
-                <button class="btn btn-warning" onclick="window.history.back()">Cancel <i class="fas fa-undo"></i></button>
+                <br>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i> Submit </button>
+                <button class="btn btn-warning" onclick="window.history.back()"><i class="fas fa-undo"></i> Cancel </button>
             </form>
         </div>
     </div>

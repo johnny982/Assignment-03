@@ -55,7 +55,7 @@ router.post('/add',async(req,res,next)=>{
     try{
         let newBook = Book({
             "Title":req.body.Title,
-            "Genre/s":req.body.Genre,
+            "Genre":req.body.Genre,
             "Rating":req.body.Rating,
             "Review":req.body.Review
         })
@@ -98,7 +98,7 @@ router.post('/edit/:id',async(req,res,next)=>{
         let updatedBook = Book({
             "_id":id,
             "Title":req.body.Title,
-            "Genre/s":req.body.Genre,
+            "Genre":req.body.Genre,
             "Rating":req.body.Rating,
             "Review":req.body.Review
         });
