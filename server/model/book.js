@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
 
 let bookModel = mongoose.Schema({
-    Name: String,
-    Author: String,
-    Published: String,
-    Description: String,
-    Price: Number
+    Title: String,
+    Genre: String,
+    Rating: Number,
+    Review: String
 },
 {
-    collection: "Bio_books"
+    collection: "MovieCollection"
 }
 );
 

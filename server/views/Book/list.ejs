@@ -13,29 +13,26 @@
                 <table class="table table-bordered table-striped table-hover">
                     <tr class="d-flex">
                     <% if(typeof displayName=='string' && displayName) {%>
-                        <th class="text-center col-2">Name</th>
-                        <th class="text-center col-2">Author</th>
-                        <th class="text-center col-1">Published</th>
-                        <th class="text-center col-4">Description</th>
-                        <th class="text-center col-1">Price</th>
+                        <th class="text-center col-2">Title</th>
+                        <th class="text-center col-3">Genre/s</th>
+                        <th class="text-center col-1">Rating</th>
+                        <th class="text-center col-4">Review</th>
                         <th class="text-center col-1"></th>
                         <th class="text-center col-1"></th>
                     <% } else { %>
-                        <th class="text-center col-2">Name</th>
-                        <th class="text-center col-2">Author</th>
-                        <th class="text-center col-1">Published</th>
-                        <th class="text-center col-4">Description</th>
-                        <th class="text-center col-1">Price</th>
+                        <th class="text-center col-2">Title</th>
+                        <th class="text-center col-3">Genre/s</th>
+                        <th class="text-center col-1">Rating</th>
+                        <th class="text-center col-4">Review</th>
                     <% } %>
                     </tr>
                     <% for(let count=0;count<BookList.length;count++) { %>
                     <tr class="d-flex">
                         <% if(typeof displayName=='string' && displayName) {%>
-                        <td class="text-center col-2"><%= BookList[count].Name %></td>
-                        <td class="text-center col-2"><%= BookList[count].Author %></td>
-                        <td class="text-center col-1"><%= BookList[count].Published%></td>
-                        <td class="col-4"><%= BookList[count].Description %></td>
-                        <td class="text-center col-1"><%= BookList[count].Price %></td>
+                        <td class="text-center col-2"><%= BookList[count].Title %></td>
+                        <td class="text-center col-3"><%= BookList[count].Genre %></td>
+                        <td class="text-center col-1"><%= BookList[count].Rating%></td>
+                        <td class="col-4"><%= BookList[count].Review %></td>
                         
                         
                         <td class="text-center col-1">
@@ -52,11 +49,10 @@
                             </a>
                         </td>
                         <% } else { %>
-                        <td class="text-center col-2"><%= BookList[count].Name %></td>
-                        <td class="text-center col-2"><%= BookList[count].Author %></td>
-                        <td class="text-center col-1"><%= BookList[count].Published%></td>
-                        <td class="col-4"><%= BookList[count].Description %></td>
-                        <td class="text-center col-1"><%= BookList[count].Price %></td>
+                        <td class="text-center col-2"><%= BookList[count].Title %></td>
+                        <td class="text-center col-3"><%= BookList[count].Genre %></td>
+                        <td class="text-center col-1"><%= BookList[count].Rating%></td>
+                        <td class="col-4"><%= BookList[count].Review %></td>
                         <% } %>
                     </tr>
                     <%} %>

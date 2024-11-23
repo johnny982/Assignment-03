@@ -8,29 +8,24 @@
             <h1><%= title %></h1>
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Book Title</label>
-                    <input type="text" class="form-control" id="nameTextField"
-                    placeholder="Enter Book Title" name="Name" value='<%= Book.Name %>' required>
+                    <label for="movieTextField">Movie Title</label>
+                    <input type="text" class="form-control" id="movieTextField"
+                    placeholder="Enter Movie Title" name="Title" value='<%= Book.Title %>' required>
                 </div>
                 <div class="form-group">
-                    <label for="authorTextField">Book Author</label>
-                    <input type="text" class="form-control" id="authorTextField"
-                    placeholder="Enter Author Name" name="Author" value='<%= Book.Author %>' required>
+                    <label for="genreTextField">Movie Genre/s</label>
+                    <input type="text" class="form-control" id="genreTextField"
+                    placeholder="Enter Movie Genre/s" name="Genre" value='<%= Book.Genre %>'>
                 </div>
                 <div class="form-group">
-                    <label for="publishedTextField">Published</label>
-                    <input type="text" class="form-control" id="publishedTextField"
-                    placeholder="Enter Published Year" name="Published" value='<%= Book.Published %>' required>
+                    <label for="ratingTextField">Your Rating</label>
+                    <input type="text" class="form-control" id="ratingTextField"
+                    placeholder="Enter Your Rating" name="Rating" value='<%= Book.Rating %>' required>
                 </div>
                 <div class="form-group">
-                    <label for="descriptionTextArea">Book Description</label>
-                    <textarea type="text" class="form-control" id="descriptionTextArea"
-                    placeholder="Enter Book Description" name="Description" required><%= Book.Description %></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="priceTextField">Book Price</label>
-                    <input type="text" class="form-control" id="priceTextField"
-                    placeholder="Enter Book Price" name="Price" value='<%= Book.Price %>' required>
+                    <label for="reviewTextArea">Your Review</label>
+                    <textarea type="text" class="form-control" id="reviewTextArea"
+                    placeholder="Enter Your Review" name="Review" required><%= Book.Review %></textarea>
                 </div>
                 <button class="btn btn-primary" type="submit">Submit <i class="fas fa-edit"></i></button>
                 <button class="btn btn-warning" onclick="window.history.back()">Cancel <i class="fas fa-undo"></i></button>

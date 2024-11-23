@@ -5,15 +5,9 @@ const DB = require("../config/db");
 let userModel = require('../model/User');
 let User = userModel.User;
 
-/* GET index page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Index',
-    displayName: req.user ? req.user.displayName:''
-   });
-});
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home Page',
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Home',
     displayName: req.user ? req.user.displayName:''
    });
 });

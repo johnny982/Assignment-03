@@ -54,11 +54,10 @@ router.get('/add',async(req,res,next)=>{
 router.post('/add',async(req,res,next)=>{
     try{
         let newBook = Book({
-            "Name":req.body.Name,
-            "Author":req.body.Author,
-            "Published":req.body.Published,
-            "Description":req.body.Description,
-            "Price":req.body.Price,
+            "Title":req.body.Title,
+            "Genre/s":req.body.Genre,
+            "Rating":req.body.Rating,
+            "Review":req.body.Review
         })
         Book.create(newBook).then(()=>{
             res.redirect('/bookslist');
@@ -98,11 +97,10 @@ router.post('/edit/:id',async(req,res,next)=>{
         let id=req.params.id;
         let updatedBook = Book({
             "_id":id,
-            "Name":req.body.Name,
-            "Author":req.body.Author,
-            "Published":req.body.Published,
-            "Description":req.body.Description,
-            "Price":req.body.Price
+            "Title":req.body.Title,
+            "Genre/s":req.body.Genre,
+            "Rating":req.body.Rating,
+            "Review":req.body.Review
         });
         Book.findByIdAndUpdate(id,updatedBook).then(()=>{
             res.redirect('/bookslist')
