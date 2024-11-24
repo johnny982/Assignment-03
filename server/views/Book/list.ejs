@@ -31,9 +31,31 @@
                         </td>
                         <td class="text-center col-1">
                             <a href="/bookslist/delete/<%= BookList[count]._id%>"
-                                class="btn btn-danger btn-sm">
+                                class="btn btn-danger btn-sm"
+                                data-bs-toggle="modal" data-bs-target="#deleteModal-<%= BookList[count]._id %>">
                                 <i class="fas fa-trash-alt"></i> Delete
                             </a>
+                            <!-- Modal -->
+                            <!-- https://getbootstrap.com/docs/5.3/components/modal/#static-backdrop -->
+                            <div class="modal fade" id="deleteModal-<%= BookList[count]._id %>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Delete Confirmation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Would you like to delete this movie?
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, don't delete.</button>
+                                    <a href="/bookslist/delete/<%= BookList[count]._id %>" class="btn btn-primary">
+                                        Yes, delete.
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                         <%} %>

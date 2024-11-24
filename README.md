@@ -2,7 +2,15 @@
 
 ## Versions
 
-* **0.8.0**
+* **1.0.0**
+    * **Full Release.**
+    * Created delete confirmation popup.
+    * Minor CSS tweaks.
+    * Fixed home page button link.
+    * "Add Movie" and "Edit Movie" pages make "Movies" nav bar text active. 
+    * Adjusted home page button icon positioning.
+
+* **[0.8.0](https://github.com/johnny982/Assignment-03/commit/210d24a0c9d5f2475974320068f1504c068619a4)**
     * Rehauled the styling.
     * Changed the home page.
     * Disabled authentication functionality.
@@ -25,7 +33,7 @@
     * Changed book page "Books", "Add Book", etc. to "Movie/s".
 
 ## Notes
-Used mostly Bootstrap, with some custom CSS.
+Used Bootstrap and custom CSS.
 
 ## Credits
 * [CSS flex-direction Property](https://www.w3schools.com/cssref/css3_pr_flex-direction.php)
@@ -33,3 +41,4 @@ Used mostly Bootstrap, with some custom CSS.
 * [CSS Layout - Horizontal & Vertical Align](https://www.w3schools.com/css/css_align.asp)
 * [css text gradient](https://stackoverflow.com/questions/8384751/css-text-gradient)
 * [CSS Viewport Units: vh, vw, vmin, and vmax](https://www.sitepoint.com/css-viewport-units-quick-start/)
+* [how to write or condition in ejs?](https://stackoverflow.com/questions/48168887/how-to-write-or-condition-in-ejs)

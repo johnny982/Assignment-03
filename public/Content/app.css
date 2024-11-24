@@ -60,8 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 75vh;
+    flex-direction: column; /* items vertical top to bottom */
+    height: 75vh; /* 75% of the viewport height */
 }
 
 #indextitle{
@@ -69,6 +69,7 @@
     color: transparent;
     background-clip: text; /* the gradient only shows in the area of the transparent text */
     font-weight: bolder;
+    font-size: 50px;
     text-align: center; /* aligns text horizontally */
 }
 
